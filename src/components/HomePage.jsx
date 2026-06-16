@@ -3,7 +3,7 @@ import Navigation from '../pagecomponents/Navigation'
 
 const HomePage = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden bg-black">
+    <div className="relative h-screen inset-0 overflow-hidden bg-black">
       {/* Center Orange Glow */}
       <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/30 blur-[180px]"/>
 
@@ -36,13 +36,12 @@ const HomePage = () => {
       <div
         className=" absolute inset-0 opacity-[0.03] mix-blend-screen"
         style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 200 200%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22/%3E%3C/filter%3E%3Crect width=%22200%22 height=%22200%22 filter=%22url(%23n)%22/%3E%3C/svg%3E')"}}
-        />
+      />
 
 
 
-
-        {/* content Home page */}
-        <Navigation />
+      {/* content Home page */}
+      <Navigation />
     </div>
   )
 }
