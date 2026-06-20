@@ -1,5 +1,7 @@
 import React from 'react'
 import Navigation from '../pagecomponents/Navigation'
+import { MdFileDownload } from 'react-icons/md'
+import { motion } from 'motion/react'
 
 const HomePage = () => {
   return (
@@ -40,8 +42,19 @@ const HomePage = () => {
 
 
 
+
+
       {/* content Home page */}
       <Navigation />
+      {/* Main content */}
+      <div className='relative overflow-hidden h-[50%] w-1/2 mt-18 ml-52 flex flex-col items-start justify-center'>
+        <motion.div initial={{scale:0}} animate={{scale:1}} transition={{duration: .4, delay: 1}} className='absolute h-full w-1 bg-white'></motion.div>
+        <p className='ml-5 text-white font-bold text-xl'>PORTFOLIO · 2026 </p>
+        <motion.h3 initial={{transform: "translateX(-500px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:1.5}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.8]'>HARSH</motion.h3>
+        <motion.h3 initial={{transform: "translateX(-280px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:1.5}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.9]'>RAJ</motion.h3>
+        <p className='ml-6 text-white font-semibold text-xl'>AI/ML Engineer · DATA ANALYST · MERN STACK</p>
+        <button className='px-4 py-2 mt-4 font-semibold text-white cursor-pointer flex items-center hover:shadow-[0_0_45px_5px_#E8602E] transition-all duration-300 justify-center gap-1 bg-[#E8602E] ml-5 rounded-full'>Download CV <MdFileDownload  /></button>
+      </div>
     </div>
   )
 }
