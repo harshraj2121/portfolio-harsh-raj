@@ -1,16 +1,44 @@
-# React + Vite
+# Hi there, I'm Harsh Raj! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 About Me
 
-Currently, two official plugins are available:
+- 🎓 **BTech '27 | Web Developer**
+- 💻 **Frontend Developer** with expertise in **React.js, Tailwind CSS, and modern web technologies**
+- 🌱 Currently **learning backend development**, focusing on the **MERN stack**
+- 🎯 **Seeking Internship Opportunities** to gain hands-on experience and build impactful projects
+- ⚡ Passionate about **building interactive and dynamic web experiences**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Skills & Technologies
 
-## React Compiler
+### Frontend
+- HTML, CSS, JavaScript
+- React.js, Redux, Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend (Learning)
+- Node.js, Express.js
+- MongoDB, Mongoose
+- REST APIs
 
-## Expanding the ESLint configuration
+### Tools & Other
+- Git & GitHub
+- VS Code, Canva
+- Deployment: Vercel, Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Projects
+
+### 🎬 **Film Quest**  
+**Tech Stack:** React.js, Redux, Axios, TMDB API  
+A modern movie discovery platform that showcases descriptions of movies, TV series, actors, and TV personalities.
+- 🔗 [GitHub Repository](https://github.com/harshraj2121/FindYourFilm)
+- 🌐 [Live Demo](https://starplayz-harshraj2121s-projects.vercel.app/)
+
+
+## 🌐 Connect with Me
+
+- **GitHub**: [harshraj2121](https://github.com/harshraj2121)
+- **LinkedIn**: [harshraj2121](https://www.linkedin.com/in/harshraj2121/)
+- 📧 **Email**: [harsh.r2121@hotmail.com](mailto:harsh.r2121@hotmail.com)
+
+---
+
+*Let's build something amazing together! 🚀*

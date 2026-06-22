@@ -4,6 +4,12 @@ import { MdFileDownload } from 'react-icons/md'
 import { motion } from 'motion/react'
 
 const HomePage = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/HARSH RAJ.pdf";
+    link.download = "harsh_raj_resume.pdf";
+    link.click();
+  }
   return (
     <div className="relative h-screen inset-0 overflow-hidden bg-black">
       {/* Center Orange Glow */}
@@ -47,13 +53,13 @@ const HomePage = () => {
       {/* content Home page */}
       <Navigation />
       {/* Main content */}
-      <div className='relative overflow-hidden h-[50%] w-1/2 mt-18 ml-52 flex flex-col items-start justify-center'>
-        <motion.div initial={{scale:0}} animate={{scale:1}} transition={{duration: .4, delay: 1}} className='absolute h-full w-1 bg-white'></motion.div>
-        <p className='ml-5 text-white font-bold text-xl'>PORTFOLIO · 2026 </p>
-        <motion.h3 initial={{transform: "translateX(-500px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:1.5}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.8]'>HARSH</motion.h3>
-        <motion.h3 initial={{transform: "translateX(-280px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:1.5}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.9]'>RAJ</motion.h3>
-        <p className='ml-6 text-white font-semibold text-xl'>AI/ML Engineer · DATA ANALYST · MERN STACK</p>
-        <button className='px-4 py-2 mt-4 font-semibold text-white cursor-pointer flex items-center hover:shadow-[0_0_45px_5px_#E8602E] transition-all duration-300 justify-center gap-1 bg-[#E8602E] ml-5 rounded-full'>Download CV <MdFileDownload  /></button>
+      <div className='relative overflow-hidden h-[50%] w-1/2 mt-22 scale-115 ml-60 flex flex-col items-start justify-center'>
+        <motion.div initial={{scale:0}} animate={{scale:1}} transition={{duration: .4, delay: 3.6}} className='absolute h-full w-1 bg-white'></motion.div>
+        <motion.p initial={{opacity:0, transform: "translateY(50px)"}} animate={{opacity:1, transform: "translateY(0px)"}} transition={{duration:.5, delay:4.5}} className='ml-5 text-white text-sm tracking-widest'>PORTFOLIO · 2026 </motion.p>
+        <motion.h3 initial={{transform: "translateX(-500px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:4}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.8]'>HARSH</motion.h3>
+        <motion.h3 initial={{transform: "translateX(-280px)"}} animate={{transform: "translatex(0px)"}} transition={{duration: .5, delay:4}} className='ml-3 text-9xl text-white font-manrope tracking-wider font-black leading-[.9]'>RAJ</motion.h3>
+        <motion.p initial={{opacity:0, transform: "translateY(-50px)"}} animate={{opacity:1, transform: "translateY(0px)"}} transition={{duration:.5, delay:4.5}} className='ml-6 text-white text-sm tracking-widest'>AI/ML Engineer · DATA ANALYST · MERN STACK</motion.p>
+        <motion.button onClick={handleDownload} initial={{opacity:0, transform: "translateY(-50px)"}} animate={{opacity:1, transform: "translateY(0px)"}} transition={{duration:.5, delay:5}} className='px-4 py-2 mt-4 font-semibold text-white cursor-pointer flex items-center hover:shadow-[0_0_20px_1px_#E8602E] transition-all duration-300 justify-center gap-1 bg-[#E8602E] ml-5 rounded-full'>Download CV <MdFileDownload  /></motion.button>
       </div>
     </div>
   )
